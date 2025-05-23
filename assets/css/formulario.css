@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f4c300;
+    position: relative;
+    z-index: 0;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+  background-image: url('imagens/backgroundfundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    background-position: center;
+    
+    z-index: -1;
+    
+    
+  }
+  .titulo {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contato {
+    font-size: 40px;
+    font-weight: 500;
+    color: #000000;
+    
+  }
+  
+  .estrutura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+  }
+  
+  .componentes {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+    
+
+
+  }
+  
+  .componentes label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+  
+  .componentes input[type="text"],
+  .componentes input[type="email"],
+  .componentes textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .componentes textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .componentes input[type="submit"] {
+    background-color: #373b1d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .componentes input[type="submit"]:hover {
+    background-color: #59452d;
+  }
+  

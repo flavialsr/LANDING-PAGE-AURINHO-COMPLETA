@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100%; 
+   background-image: url('imagens/backgroundfundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
+
+
+.Tituloservicos {
+  
+  padding: 40px 20px;
+  background-color: rgba(255, 204, 0, 0.71);
+  min-height: 400px;
+}
+  
+  .servicos {
+    font-size: 53px;
+    color: #000000;
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+    margin-top: 0px;
+    text-align: left;
+    
+  }
+  
+  .primeiroparagrafoservicos {
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 1.6;
+    align-items: center;
+  }
+  .primeiroparagrafoservicos p {
+    max-width: 800px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+
+  
+  /* Container geral */
+.secao-banhotosa {
+  margin-bottom: 60px;
+}
+
+  .banhoTosa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 90px;/*para aumentar e diminuir  o espaçamento com o conteúdo acima */
+    padding: 40px 20px;
+   max-width: 1200px;
+    }
+  
+
+
+
+  /* Texto banho tosa */
+  .banhoTosa-texto {
+
+    flex: 1;
+    min-width: 280px;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    align-items: left;
+    margin-top: 90px;
+  }
+  
+
+  .destaquepremium{
+    color: #f4c300;
+  }
+    
+  
+  /* Imagens lado a lado na missão */
+  .banhoTosa-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right:40px;
+    
+    
+  }
+  
+  .banhoTosa-imagens img {
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 20px;
+  
+  }
+  
+  
+  .consulta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 90px;/*para aumentar e diminuir  o espaçamento com o conteúdo acima */
+    
+  }
+  
+  .consulta-texto {
+    flex: 1;
+    min-width: 280px;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    align-items: left;
+    margin-top:90px;
+  }
+
+  .destaqueveterinaria{
+    color: #f4c300;
+}
+  
+ /* Imagens lado a lado na missão */
+ .consulta-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right:40px;
+    
+  }
+  
+  .consulta-imagens img {
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 20px;
+   
+  }
+  
+  
+  
+.spa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+   margin-bottom: 90px;
+   margin-top: 90px;
+    
+}
+
+.spa-texto {
+    flex: 1;
+    min-width: 280px;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    align-items: left;
+    margin-top: 90px;
+}
+
+.spa-destaque{
+    color: #f4c300;
+}
+
+.spa-imagens img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right:40px;
+    
+}
+.spa-imagens img {
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 50px;
+  }
+
+
+  .fale-conosco-container {
+    background-color: #333;       
+    color: #ffc400;                
+    padding: 15px 40px;            /* altura e largura interna */
+    border: none;
+    border-radius: 10px;           /* cantos arredondados */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto;             /* espaçamento e centralização */
+    display: block;
+    max-width: 300px;              /* limite de largura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra sutil */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fale-conosco-link {
+    font-size: 24px;
+    color: rgba(255, 204, 0, 1); /* tom amarelo do seu tema */
+    font-weight: 500;
+    transition: color 0.3s ease;
+   
+  }
+  
+  .fale-conosco-link:hover {
+    color: rgba(255, 204, 0, 1); /* tom amarelo do seu tema */
+  }
+  

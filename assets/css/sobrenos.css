@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100%; 
+   background-image: url('imagens/backgroundfundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
+
+
+.Titulo {
+    padding: 40px 20px;
+    background-color: rgba(255, 204, 0, 0.71);
+}
+  
+  .sobre {
+    font-size: 53px;
+    color: #000000;
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+    margin-top: 0px;
+    text-align: left;
+    
+  }
+  
+  .primeiroparagrafo {
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 1.6;
+    align-items: center;
+  }
+  
+  .primeiroparagrafo p {
+    max-width: 800px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  
+  
+ 
+  
+  /* Container geral da seção missão */
+.secao-missao {
+    margin-bottom: 60px;
+  }
+  
+  .missao-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 90px;/*para aumentar e diminuir  o espaçamento com o conteúdo acima */
+    padding: 40px 20px;
+   max-width: 1200px;
+  
+    
+  }
+  
+  /* Texto da missão */
+  .missao-texto {
+    flex: 1;
+    min-width: 280px;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    align-items: left;
+  }
+  
+
+  .destaquemissao{
+    color: #f4c300;
+  }
+    
+  
+  /* Imagens lado a lado na missão */
+  .missao-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right:40px;
+  }
+  
+  .missao-imagens img {
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Visão: mesma coisa */
+  .visao-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 90px;/*para aumentar e diminuir  o espaçamento com o conteúdo acima */
+    
+  }
+  
+  .visao-texto {
+    flex: 1;
+    min-width: 280px;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    align-items: left
+  }
+
+  .destaquevisao{
+    color: #f4c300;
+}
+  
+  .visao-imagem img {
+    display: flex;
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+   margin-right: 60px;
+  }
+
+.valores-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 40px;
+    
+}
+
+.valores-texto {
+    flex: 1;
+    min-width: 280px;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+}
+
+.destaqueamor{
+    color: #f4c300;
+}
+
+.destaquetransp{
+    color: #f4c300;
+}
+
+.destaqueprof{
+    color: #f4c300;
+}
+
+.destaquevalores{
+    color: #f4c300;
+
+
+}
+
+.valores-imagem img {
+  width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 40px;
+  margin-top: 70px;/*para aumentar e diminuir  o espaçamento com o conteúdo acima */
+  margin-bottom: 80px;
+}
+
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .missao-container,
+    .visao-container
+    .valores-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .missao-imagens img,
+    .visao-imagem img
+    .valores-container  img {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  
+    .missao-texto,
+    .visao-texto 
+    .valores-container{
+      font-size: 18px;
+    }
+  }
+  

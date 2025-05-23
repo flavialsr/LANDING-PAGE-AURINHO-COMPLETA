@@ -1,0 +1,183 @@
+/* definiçao inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  /* Corpo da página */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+  }
+ 
+  /* Cabeçalho */
+  .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+ 
+  }
+  
+  /* Marca AUU RINHO */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  .brand img {
+    margin-right: 0px;
+    padding: 0;
+  }
+  
+  .brand h1 {
+    font-size: 40px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .auu {
+    color: rgba(255, 204, 0, 1);
+    font-family: 'Poppins' sans-serif;
+    font-weight: 800; /* ExtraBold */
+    
+  }
+  
+  .rinho {
+    color: #000000;
+    font-weight: 800; /* ExtraBold */
+  }
+  
+  /* Navegação */
+  .navbar {
+    display: flex;
+    gap: 50px;
+   
+
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 300;
+    transition: 0.3s ease;
+   font-size: 17px;
+
+  }
+  
+  .navbar a:hover {
+    color: rgba(255, 204, 0, 1);
+  }
+  
+  /* Estilo do menu hamburguer */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+ 
+/* Rodapé geral */
+.rodape {
+    width: 100%;            /*  largura total da tela */
+    position: relative;      /*  posição relativa para o rodapé */
+    bottom: 0;              /*  fixar na parte inferior da tela */
+    margin: 0;               /* Remover margens laterais */
+    padding: 20px 0;         
+    background-color: rgba(255, 204, 0, 0.53);
+    left: 0%;
+  }
+  
+  /* Ícones sociais */
+  .icones-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  /* Texto do rodapé */
+  .endereço-rodape {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000000;
+  }
+  .rodape {
+    background: rgba(255, 204, 0, 0.53);
+    width: 100vw;
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .social-icons img {
+      width: 40px;
+      height: auto;
+    }
+  
+    .footer-address {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  
+
+  /* Responsividade */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Esconde a navbar apenas em telas pequenas (mobile) */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white; /* ou a cor do seu header */
+    position: absolute;
+    top: 60px; /* ajuste conforme altura do header */
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .navbar.ativo {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Para desktop (navbar sempre visível) */
+@media (min-width: 769px) {
+  .navbar {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+  
